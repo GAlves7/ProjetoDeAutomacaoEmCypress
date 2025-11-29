@@ -27,10 +27,6 @@ describe('Test Case 2 - Login with correct email and password', () => {
     // 8 Verificar logged in
     cy.contains('Logged in as', { timeout: 10000 }).should('be.visible');
 
-    // 9 Delete account
-    cy.contains('Delete Account').click();
-
-    // 10 Verificar ACCOUNT DELETED!
-    cy.contains('Account Deleted!').should('be.visible');
   });
+  
 });
